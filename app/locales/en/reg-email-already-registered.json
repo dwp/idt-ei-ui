@@ -1,0 +1,13 @@
+{
+  "title": "This email address is already registered with this service",
+  "heading": "This email address is already registered with this service",
+  "p-1": "An email address can only be used to register one person.",
+  "p-2": "If you have registered with this email address and know your password,",
+  "href-1": "sign in",
+  "p-3": "If you have registered with this email address but have forgotten your password,",
+  "href-2": "reset your password",
+  "p-4": "If you have not registered before,",
+  "href-3": "register with a different email address",
+  "p-5": "If you think someone may have used your email address to register without your permission, ",
+  "href-4": "email DWP sign in support"
+}

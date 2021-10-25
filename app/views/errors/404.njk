@@ -1,0 +1,11 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {{ t('common:error') }}: {{ t('common:service-name') }}
+{% endblock %}
+
+{% block mainContent %}
+    <h1 class="govuk-heading-xl" id="page-heading">{{ t('404:h1') }}</h1>
+    <p class="govuk-body">{{ t('404:p-1') }}</p>
+    <p class="govuk-body">{{ t('404:p-2') }}</p>
+{% endblock %}

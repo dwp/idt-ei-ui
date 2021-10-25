@@ -1,0 +1,9 @@
+{
+  "title": "You have been locked out for 15 minutes",
+  "h1": "You have been locked out for 15 minutes",
+  "p-1" : "This is because wrong security codes were entered 3 times.",
+  "p-2": "You will be able to ",
+  "account-recovery-link": "try again",
+  "p-3": " after 15 minutes.",
+  "p-4": "This is to keep your information secure."
+}

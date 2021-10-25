@@ -1,0 +1,67 @@
+{
+    "title": "Cookies",
+    "heading": "Cookies",
+    "summary": {
+        "p-1": "Cookies are small files saved on your phone, tablet or computer when you visit a website.",
+        "p-2": "We use cookies to make our services work and collect information about how you use our service."
+    },
+    "essential": {
+        "heading": "Essential cookies",
+        "p-1": "Essential cookies keep your information secure while you use our services. We do not need to ask permission to use them.",
+        "table": {
+            "heading-1": "Name",
+            "heading-2": "Purpose",
+            "heading-3": "Expires",
+            "row-1": {
+                "col-1": "lng",
+                "col-2": "Saves your language settings for English or Welsh",
+                "col-3": "1 year"
+            },
+            "row-2": {
+                "col-1": "SESSIONID",
+                "col-2": "Keeps you signed in while you are using the service",
+                "col-3": "This session only"
+            },
+            "row-3": {
+                "col-1": "seen_cookie_message",
+                "col-2": "Saves your cookie settings",
+                "col-3": "1 year"
+            }
+        }
+    },
+    "analytics": {
+        "heading": "Cookies that measure website use (Google Analytics)",
+        "p-1": "With your permission, we use Google Analytics to collect data about how you use our services. This information helps us to improve our service.",
+        "p-2": "Google is not allowed to use or share our analytics data with anyone.",
+        "p-3": "Google Analytics stores anonymised information about:",
+        "li-1": "how you got to our service",
+        "li-2": "the pages you visit on our services and how long you spend on them",
+        "li-3": "any errors you see while using our service",
+        "table": {
+            "heading-1": "Name",
+            "heading-2": "Purpose",
+            "heading-3": "Expires",
+            "row-1": {
+                "col-1": "_ga",
+                "col-2": "Counts how many people visit the website by checking if they have visited before",
+                "col-3": "2 years"
+            },
+            "row-2": {
+                "col-1": "_gid",
+                "col-2": "Counts how many people visit the website by checking if they have visited before",
+                "col-3": "24 hours"
+            },
+            "row-3": {
+                "col-1": "_gat",
+                "col-2": "Used to manage the rate at which page view requests are made",
+                "col-3": "1 minute"
+            }
+        },
+        "radios": {
+            "heading": "Do you want to accept cookies that measure your website use?",
+            "accept": "Use cookies that measure my website use",
+            "reject": "Do not use cookies that measure my website use",
+            "button": "Save changes"
+        }
+    }
+}

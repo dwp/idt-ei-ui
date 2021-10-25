@@ -1,0 +1,67 @@
+{% if displayCookiesBanner %}
+  {% set html %}
+    <p class="govuk-body">{{ t("cookies-banner:main-banner.p-1") }}</p>
+    <p class="govuk-body">{{ t("cookies-banner:main-banner.p-2") }}</p>
+  {% endset %}
+  <form action="/cookies/banner" method="POST">
+    <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+    {{ govukCookieBanner({
+      ariaLabel: t("cookies-banner:heading"),
+      messages: [{
+        headingText: t("cookies-banner:heading"),
+        html: html,
+        actions: [{
+          text: t("cookies-banner:main-banner.button-accept"),
+          type: "submit",
+          name: "cookies",
+          value: "accept"
+        },
+        {
+          text: t("cookies-banner:main-banner.button-reject"),
+          type: "submit",
+          name: "cookies",
+          value: "reject"
+        },
+        {
+          text: t("cookies-banner:main-banner.href-1"),
+          href: "/cookies"
+        }]
+      }]
+    }) }}
+  </form>
+{% endif %}
+
+{% if displayCookiesAcceptance %}
+  {% set html %}
+    <p class="govuk-body">
+      {{ t("cookies-banner:acceptance.p-1.text-1") }}
+        <a class="govuk-link" href="/cookies">{{ t("cookies-banner:acceptance.p-1.href-1") }}</a>
+      {{ t("cookies-banner:acceptance.p-1.text-2") }}
+    </p>
+  {% endset %}
+{% elif displayCookiesRejection %}
+  {% set html %}
+    <p class="govuk-body">
+      {{ t("cookies-banner:rejection.p-1.text-1") }}
+        <a class="govuk-link" href="/cookies">{{ t("cookies-banner:rejection.p-1.href-1") }}</a>
+      {{ t("cookies-banner:rejection.p-1.text-2") }}
+    </p>
+  {% endset %}
+{% endif %}
+
+{% if displayCookiesAcceptance or displayCookiesRejection %}
+  <form action="/cookies/hide-message" method="POST">
+    <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+    {{ govukCookieBanner({
+      ariaLabel: t("cookies-banner:heading"),
+      messages: [{
+        html: html,
+        actions: [{
+          text: t("cookies-banner:button-hide"),
+          type: "submit",
+          name: "cookiesMessage"
+        }]
+      }]
+    }) }}
+  </form>
+{% endif %}

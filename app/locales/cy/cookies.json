@@ -1,0 +1,67 @@
+{
+    "title": "Cwcis",
+    "heading": "Cwcis",
+    "summary": {
+        "p-1": "Ffeiliau bach yw cwcis a arbedir ar eich ffôn, llechen neu gyfrifiadur pan ymwelwch â gwefan.",
+        "p-2": "Rydym yn defnyddio cwcis i wneud i'n gwasanaethau weithio ac i gasglu gwybodaeth am sut rydych yn defnyddio ein gwasanaeth."
+    },
+    "essential": {
+        "heading": "Cwcis hanfodol",
+        "p-1": "Mae cwcis hanfodol yn cadw'ch gwybodaeth yn ddiogel wrth i chi ddefnyddio ein gwasanaethau. Nid oes angen i ni ofyn caniatâd i'w defnyddio.",
+        "table": {
+            "heading-1": "Enw",
+            "heading-2": "Diben",
+            "heading-3": "Dod i ben",
+            "row-1": {
+                "col-1": "lng",
+                "col-2": "Arbed eich gosodiadau iaith ar gyfer Cymraeg neu Saesneg",
+                "col-3": "1 flwyddyn"
+            },
+            "row-2": {
+                "col-1": "SESSIONID",
+                "col-2": "Yn eich cadw wedi eich mewngofnodi tra rydych yn defnyddio'r gwasanaeth",
+                "col-3": "Y sesiwn hon yn unig"
+            },
+            "row-3": {
+                "col-1": "seen_cookie_message",
+                "col-2": "Arbed eich gosodiadau cwcis",
+                "col-3": "1 flwyddyn"
+            }
+        }
+    },
+    "analytics": {
+        "heading": "Cwcis sy'n mesur defnydd  o wefan(Google Analytics)",
+        "p-1": "Gyda'ch caniatâd, rydym yn defnyddio Google Analytics i gasglu data am sut rydych yn defnyddio ein gwasanaethau. Mae'r wybodaeth hon yn ein helpu i wella ein gwasanaeth.",
+        "p-2": "Ni chaniateir i Google ddefnyddio na rhannu ein data dadansoddi ag unrhyw un.",
+        "p-3": "Mae Google Analytics yn storio gwybodaeth ddienw am:",
+        "li-1": "sut y gwnaethoch gyrraedd ein gwasanaeth",
+        "li-2": "y tudalennau rydych yn ymweld â nhw ar ein gwasanaethau a pha mor hir rydych yn ei dreulio arnynt",
+        "li-3": "unrhyw wallau a welwch wrth ddefnyddio ein gwasanaeth",
+        "table": {
+            "heading-1": "Enw",
+            "heading-2": "Diben",
+            "heading-3": "Dod i ben",
+            "row-1": {
+                "col-1": "_ga",
+                "col-2": "Yn cyfrif faint o bobl sy'n ymweld â'r wefan trwy wirio a ydynt wedi ymweld o'r blaen",
+                "col-3": "2 flynedd"
+            },
+            "row-2": {
+                "col-1": "_gid",
+                "col-2": "Yn cyfrif faint o bobl sy'n ymweld â'r wefan trwy wirio a ydynt wedi ymweld o'r blaen",
+                "col-3": "24 awr"
+            },
+            "row-3": {
+                "col-1": "_gat",
+                "col-2": "Fe'i defnyddir i reoli'r gyfradd y mae ceisiadau gweld tudalennau yn cael ei gwneud",
+                "col-3": "1 funud"
+            }
+        },
+        "radios": {
+            "heading": "Ydych chi am dderbyn cwcis sy'n mesur eich defnydd o wefan?",
+            "accept": "Defnyddiwch gwcis sy'n mesur fy nefnydd o wefan",
+            "reject": "Peidiwch â defnyddio cwcis sy'n mesur fy nefnydd o wefan",
+            "button": "Arbed newidiadau"
+        }
+    }
+}

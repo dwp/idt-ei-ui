@@ -1,0 +1,20 @@
+{
+  "title": "Register",
+  "h1": "Register",
+  "p-1" : "Register so you can securely sign in whenever you use this service.",
+  "h2-1" : "Before you start",
+  "p-2" : "You will need:",
+  "li-1": "an email address",
+  "li-2": "a mobile phone",
+  "p-3": "You will also need information from 2 sources so we can check we are dealing with the right person. These are:",
+  "li-3": "a UK passport",
+  "li-4": "payslips or P60",
+  "li-5": "Self Assessment",
+  "li-6": "information about tax credits, if you claim them",
+  "li-7": "details of your credit report",
+  "h2-2" : "What happens next",
+  "p-4": "Your information will be checked against our records. This also helps protect you from fraud.",
+  "p-5" : "We will send security codes to your email and mobile phone to check that they belong to you.",
+  "p-6" : "Whenever you sign in we will send a new security code to your mobile phone.",
+  "p-7" : "You will also need to create a password."
+}

@@ -1,0 +1,18 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {{ t('reg-email-already-registered:title') }}
+{% endblock %}
+
+{% block mainContent %}
+
+    <h1 class="govuk-heading-l" id="page-heading">  
+        {{ t('reg-email-already-registered:heading') }}
+    </h1>
+    <p>{{ t('reg-email-already-registered:p-1') }}</p>
+    <p>{{ t('reg-email-already-registered:p-2') }} <a href="{{ signinLink }}">{{ t('reg-email-already-registered:href-1') }}</a>.</p>
+    <p>{{ t('reg-email-already-registered:p-3') }} <a href="{{passwordResetPath}}">{{ t('reg-email-already-registered:href-2') }}</a>.</p>
+    <p>{{ t('reg-email-already-registered:p-4') }} <a href="/register">{{ t('reg-email-already-registered:href-3') }}</a>.</p>
+    <p>{{ t('reg-email-already-registered:p-5') }} <a href="#">{{ t('reg-email-already-registered:href-4') }}</a>.</p>
+
+{% endblock %}

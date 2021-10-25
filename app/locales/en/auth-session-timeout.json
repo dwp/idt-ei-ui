@@ -1,0 +1,7 @@
+{
+  "title": "Sign in stopped",
+  "heading": "Sign in stopped",
+  "p-1": "You were stopped from signing in because no information was entered for 20 minutes. You can start signing in again whenever you are ready.",
+  "p-2": "This keeps your information secure.",
+  "button": "Start again"
+}

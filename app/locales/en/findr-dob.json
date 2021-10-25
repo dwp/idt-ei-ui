@@ -1,0 +1,9 @@
+{
+  "title": "What is your date of birth?",
+  "error-title": "Error: What is your date of birth?",
+  "heading": "What is your date of birth?",
+  "day": "Day",
+  "month": "Month",
+  "year": "Year",
+  "hint": "For example, 27 3 1979"
+}

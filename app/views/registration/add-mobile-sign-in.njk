@@ -1,0 +1,19 @@
+{% extends "../form.njk" %}
+
+{% from "./../fragments/email.njk" import email %}
+
+{% block pageTitle %}
+        {{ t('reg-add-mobile-signin:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('reg-add-mobile-signin:heading') }}
+            </h1>
+        </legend>
+        <p class="govuk-body">{{ t('reg-add-mobile-signin:p-1') }}</p>
+    </fieldset>
+    <input type="hidden" name="callbacks" />
+{% endblock %}

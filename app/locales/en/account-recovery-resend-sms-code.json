@@ -1,0 +1,10 @@
+{
+  "title": "Send me a new text message",
+  "heading": "Send me a new text message",
+  "p-1": "We will send you a text message with a new security code.",
+  "p-2": "After several attempts, I have not received a text message",
+  "p-3": "The mobile number you entered may be wrong. ",
+  "href-1": "Enter your mobile number again",
+  "p-4": " and we will send a new security code.",
+  "p-5": "If you still do not receive a code, try again later."
+}

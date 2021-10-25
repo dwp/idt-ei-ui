@@ -1,0 +1,33 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reg-resend-mobile:title') }}
+{% endblock %}
+
+{% block formElements %}
+
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('reg-resend-mobile:heading') }}
+            </h1>
+        </legend>
+
+        <p class="govuk-body">{{ t('reg-resend-mobile:p-1') }}</p>
+
+        <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text" id="resend-additional-details">
+              {{ t('reg-resend-mobile:p-2') }}
+            </span>
+            </summary>
+            <div class="govuk-details__text">
+                <p>{{ t('reg-resend-mobile:p-3') }}<a href="re-enter-mobile" id="re-enter-mobile">{{ t('reg-resend-mobile:href-1') }}</a>{{ t('reg-resend-mobile:p-4') }}</p>
+                <p>{{ t('reg-resend-mobile:p-5') }}</p>
+            </div>
+        </details>
+    </fieldset>
+    <input type="hidden" name="callbacks" value="resend"/>
+    <input type="hidden" name="callbacks" value="" />
+
+{% endblock %}

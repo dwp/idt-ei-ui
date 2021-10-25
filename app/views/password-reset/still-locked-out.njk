@@ -1,0 +1,13 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {{ t('reset-still-locked-out:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% block mainContent %}
+    <h1 class="govuk-heading-l" id="page-heading">{{ t('reset-still-locked-out:h1') }}</h1>
+    <p>{{ t('reset-still-locked-out:p-1') }}</p>
+    <p>{{ t('reset-still-locked-out:p-2') }}<a id = "reset" href="{{ passwordResetPath }}">{{ t('reset-still-locked-out:passwordResetLink') }}</a> {{ t('reset-still-locked-out:p-3') }}</p>
+{% endblock %}

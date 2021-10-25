@@ -1,0 +1,12 @@
+{
+  "title": "Rhowch eich rhif ffôn symudol",
+  "error-title": "Gwall: Rhowch eich rhif ffôn symudol",
+  "heading": "Rhowch eich rhif ffôn symudol",
+  "p-1": "Byddwn yn anfon cod diogelwch i'r rhif hwn.",
+  "p-2": "Pryd bynnag y byddwch yn mewngofnodi i'r gwasanaeth hwn, byddwn yn anfon cod diogelwch newydd.",
+  "label": "Rhif ffôn symudol",
+  "hint": "Ar gyfer niferoedd rhyngwladol, dylech gynnwys cod y wlad",
+  "error": {
+    "empty": "Rhowch eich rhif ffôn symudol"
+  }
+}

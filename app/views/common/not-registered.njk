@@ -1,0 +1,21 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {{ t('common-not-registered:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% block mainContent %}
+
+    <h1 class="govuk-heading-l" id="page-heading">{{ t('common-not-registered:heading') }}</h1>
+
+    <p class="govuk-body">{{ t('common-not-registered:p-1') }}</p>
+
+    <p class="govuk-body">{{ t('common-not-registered:p-2') }}<a href="{{ registrationLink }}">{{ t('common-not-registered:href-1') }}</a>{{ t('common-not-registered:p-3') }}</p>
+
+    <p class="govuk-body">{{ t('common-not-registered:p-4') }}<a href="{{ signinLink }}">{{ t('common-not-registered:href-2') }}</a>{{ t('common-not-registered:p-5') }}</p>
+
+    <p class="govuk-body">{{ t('common-not-registered:p-6') }}<a href="{{ registrationLink }}">{{ t('common-not-registered:href-3') }}</a>{{ t('common-not-registered:p-7') }}</p>
+
+{% endblock %}

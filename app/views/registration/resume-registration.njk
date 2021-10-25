@@ -1,0 +1,37 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reg-resume-registration:title') }}
+{% endblock %}
+
+{% set isStartButton = true %}
+{% set submitButtonText = 'reg-resume-registration:button' %}
+
+{% block formElements %}
+   
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('reg-resume-registration:heading') }}
+            </h1>
+        </legend>
+
+        <p class="govuk-body">{{ t('reg-resume-registration:p-1') }}</p>
+
+        <h2 class="govuk-heading-m">
+            {{ t('reg-resume-registration:h2') }} 
+        </h2>
+
+        <p class="govuk-body">{{ t('reg-resume-registration:p-2') }}</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+            {% for item in t('reg-resume-registration:list', { returnObjects: true }) %}
+                <li>
+                    {{ item }}
+                </li>
+            {% endfor %}
+        </ul>
+
+    </fieldset>
+
+{% endblock %}

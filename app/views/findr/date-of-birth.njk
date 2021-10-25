@@ -1,0 +1,61 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('findr-dob:error-title') }}
+    {% else %}
+        {{ t('findr-dob:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('findr-dob:heading') }}
+            </h1>
+        </legend>
+
+      {{ govukDateInput({
+          id: "date-of-birth",
+          hint: {
+            text: t('findr-dob:hint')
+          },
+          errorMessage: {
+            text: errorsMapped['date'].msg
+          } if errorsMapped['date'],
+          items: [
+            {
+              label: t('findr-dob:day'),
+              name: "day",
+              classes: "govuk-input--width-2" + (" govuk-input--error" if dateErrors.invalidDay),
+              value: day,
+              id: "date",
+              inputmode: "text",
+              pattern: ".+",
+              attributes: { autocomplete: "off" }
+            },
+            {
+              label: t('findr-dob:month'),
+              name: "month",
+              classes: "govuk-input--width-2" + (" govuk-input--error" if dateErrors.invalidMonth),
+              value: month,
+              inputmode: "text",
+              pattern: ".+",
+              attributes: { autocomplete: "off" }
+            },
+            {
+              label: t('findr-dob:year'),
+              name: "year",
+              classes: "govuk-input--width-4" + (" govuk-input--error" if dateErrors.invalidYear),
+              value: year,
+              inputmode: "text",
+              pattern: ".+",
+              attributes: { autocomplete: "off" }
+            }
+          ]
+      }) }}
+    </fieldset>
+
+{% endblock %}

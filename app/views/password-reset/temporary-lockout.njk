@@ -1,0 +1,14 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {{ t('reset-temporary-lockout:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% block mainContent %}
+    <h1 class="govuk-heading-l" id="page-heading">{{ t('reset-temporary-lockout:h1') }}</h1>
+    <p>{{ t('reset-temporary-lockout:p-1') }}</p>
+    <p>{{ t('reset-temporary-lockout:p-2') }}<a id = "landing" href="{{ passwordResetPath }}">{{ t('reset-temporary-lockout:passwordResetLink') }}</a> {{ t('reset-temporary-lockout:p-3') }}</p>
+    <p>{{ t('reset-temporary-lockout:p-4') }}</p>
+{% endblock %}

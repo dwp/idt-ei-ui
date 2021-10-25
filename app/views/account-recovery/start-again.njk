@@ -1,0 +1,20 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('account-recovery-start-again:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% set submitButtonText = 'account-recovery-start-again:button' %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">
+        {{ t('account-recovery-start-again:heading') }}
+    </h1>
+
+    <p class="govuk-body">{{ t('account-recovery-start-again:p-1') }}</p>
+    
+    <input type="hidden" name="callbacks" value="resend">
+    <input type="hidden" name="callbacks" value="">
+{% endblock %}

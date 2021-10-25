@@ -1,0 +1,30 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reset-resend-mobile:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">
+        {{ t('reset-resend-mobile:heading') }}
+    </h1>
+
+    <p class="govuk-body">
+        {{ t('reset-resend-mobile:p-1') }}
+    </p>
+
+    <p class="govuk-body">
+        {{ t('reset-resend-mobile:p-2') }}
+    </p>
+
+    <input type="hidden" name="callbacks" value="resend">
+    <input type="hidden" name="callbacks" value="">
+{% endblock %}
+
+{% block nextSteps %}
+    <p>
+        <a id="cannot-access-mobile" href="/account-recovery/start-update-mobile">
+            {{ t('reset-resend-mobile:recoveryLink') }}
+        </a>
+    </p>
+{% endblock %}

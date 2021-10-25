@@ -1,0 +1,269 @@
+{
+  "register": {
+    "startAgainPath": "/register/start-register-again",
+    "exemptPages": [
+      "/",
+      "/start-register-again",
+      "/session-timeout",
+      "/start-again-incorrect-otp",
+      "/resume-registration"
+    ],
+    "validTransitions": [{
+      "previousPage": "/",
+      "permittedCurrentPages": [
+        "/email"
+      ]
+    }, {
+      "previousPage": "/email",
+      "permittedCurrentPages": [
+        "/verify-email"
+      ]
+    }, {
+      "previousPage": "/verify-email",
+      "permittedCurrentPages": [
+        "/password",
+        "/resend-email",
+        "/email-already-registered",
+        "/start-again-expired-otp",
+        "/start-again-incorrect-otp"
+      ]
+    }, {
+      "previousPage": "/password",
+      "permittedCurrentPages": [
+        "/mobile"
+      ]
+    }, {
+      "previousPage": "/resend-email",
+      "permittedCurrentPages": [
+        "/verify-email",
+        "/re-enter-email"
+      ]
+    }, {
+      "previousPage": "/mobile",
+      "permittedCurrentPages": [
+        "/verify-mobile"
+      ]
+    }, {
+      "previousPage": "/verify-mobile",
+      "permittedCurrentPages": [
+        "/complete",
+        "/resend-mobile",
+        "/start-again-expired-otp",
+        "/start-again-incorrect-otp",
+        "/add-mobile-when-sign-in"
+      ]
+    }, {
+      "previousPage": "/resend-mobile",
+      "permittedCurrentPages": [
+        "/verify-mobile",
+        "/re-enter-mobile"
+      ]
+    }, {
+      "previousPage": "/resume-registration",
+      "permittedCurrentPages": [
+        "/mobile"
+      ]
+    }]
+  },
+  "sign-in": {
+    "startAgainPath": "/authenticate/start-again",
+    "exemptPages": [
+      "/",
+      "/start-again",
+      "/session-timeout",
+      "/last-login",
+      "/problem"
+    ],
+    "validTransitions": [{
+      "previousPage": "/",
+      "permittedCurrentPages": [
+        "/verify-mobile",
+        "/temporary-lockout",
+        "/still-temp-lockout",
+        "/full-lockout"
+      ]
+    }, {
+      "previousPage": "/verify-mobile",
+      "permittedCurrentPages": [
+        "/name",
+        "/resend-mobile",
+        "/temporary-lockout-sms",
+        "/full-lockout"
+      ]
+    }, {
+      "previousPage": "/name",
+      "permittedCurrentPages": [
+        "/date-of-birth"
+      ]
+    }, {
+      "previousPage": "/date-of-birth",
+      "permittedCurrentPages": [
+        "/postcode"
+      ]
+    }, {
+      "previousPage": "/postcode",
+      "permittedCurrentPages": [
+        "/not-found",
+        "/could-not-sign-in"
+      ]
+    }, {
+      "previousPage": "/resend-mobile",
+      "permittedCurrentPages": [
+        "/verify-mobile"
+      ]
+    }]
+  },
+  "password-reset": {
+    "startAgainPath": "/password-reset/start-again",
+    "exemptPages": [
+      "/",
+      "/start-again",
+      "/session-timeout",
+      "/problem"
+    ],
+    "validTransitions": [{
+      "previousPage": "/",
+      "permittedCurrentPages": [
+        "/email-address"
+      ]
+    }, {
+      "previousPage": "/email-address",
+      "permittedCurrentPages": [
+        "/verify-email",
+        "/problem"
+      ]
+    }, {
+      "previousPage": "/verify-email",
+      "permittedCurrentPages": [
+        "/resend-email",
+        "/email-not-registered",
+        "/temporary-lockout",
+        "/still-locked-out",
+        "/password-changed-recently",
+        "/verify-mobile",
+        "/new-password"
+      ]
+    }, {
+      "previousPage": "/resend-email",
+      "permittedCurrentPages": [
+        "/verify-email",
+        "/reenter-email-address"
+      ]
+    }, {
+      "previousPage": "/reenter-email-address",
+      "permittedCurrentPages": [
+        "/email-address"
+      ]
+    }, {
+      "previousPage": "/verify-mobile",
+      "permittedCurrentPages": [
+        "/resend-mobile",
+        "/problem",
+        "/new-password",
+        "/temporary-lockout"
+      ]
+    }, {
+      "previousPage": "/resend-mobile",
+      "permittedCurrentPages": [
+        "/verify-mobile"
+      ]
+    }, {
+      "previousPage": "/new-password",
+      "permittedCurrentPages": [
+        "/success"
+      ]
+    }]
+  },
+  "account-recovery": {
+    "startAgainPath": "/account-recovery/start-again",
+    "exemptPages": [
+      "/cannot-access-email",
+      "/start-update-mobile",
+      "/start-again",
+      "/session-timeout",
+      "/problem"
+    ],
+    "validTransitions": [{
+      "previousPage": "/start-update-mobile",
+      "permittedCurrentPages": [
+        "/email-address"
+      ]
+    }, {
+      "previousPage": "/email-address",
+      "permittedCurrentPages": [
+        "/verify-email"
+      ]
+    }, {
+      "previousPage": "/verify-email",
+      "permittedCurrentPages": [
+        "/name",
+        "/resend-email-code",
+        "/temporary-lockout",
+        "/still-temporary-lockout",
+        "/email-not-registered"
+      ]
+    }, {
+      "previousPage": "/resend-email-code",
+      "permittedCurrentPages": [
+        "/verify-email",
+        "/reenter-email-address"
+      ]
+    }, {
+      "previousPage": "/reenter-email-address",
+      "permittedCurrentPages": [
+        "/email-address"
+      ]
+    }, {
+      "previousPage": "/name",
+      "permittedCurrentPages": [
+        "/date-of-birth"
+      ]
+    }, {
+      "previousPage": "/date-of-birth",
+      "permittedCurrentPages": [
+        "/postcode"
+      ]
+    }, {
+      "previousPage": "/postcode",
+      "permittedCurrentPages": [
+        "/new-mobile-number",
+        "/not-found",
+        "/could-not-sign-in"
+      ]
+    }, {
+      "previousPage": "/new-mobile-number",
+      "permittedCurrentPages": [
+        "/verify-new-mobile-number"
+      ]
+    }, {
+      "previousPage": "/verify-new-mobile-number",
+      "permittedCurrentPages": [
+        "/change-your-password",
+        "/resend-new-sms-code",
+        "/temporary-lockout"
+      ]
+    }, {
+      "previousPage": "/resend-new-sms-code",
+      "permittedCurrentPages": [
+        "/verify-new-mobile-number",
+        "/reenter-new-mobile-number"
+      ]
+    }, {
+      "previousPage": "/reenter-new-mobile-number",
+      "permittedCurrentPages": [
+        "/new-mobile-number"
+      ]
+    }, {
+      "previousPage": "/change-your-password",
+      "permittedCurrentPages": [
+        "/create-new-password",
+        "/complete"
+      ]
+    }, {
+      "previousPage": "/create-new-password",
+      "permittedCurrentPages": [
+        "/complete"
+      ]
+    }]
+  }
+}

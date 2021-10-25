@@ -1,0 +1,12 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {{ t('auth-temporary-lockout-sms:title') }}
+{% endblock %}
+
+{% block mainContent %}
+    <h1 class="govuk-heading-l" id="page-heading">{{ t('auth-temporary-lockout-sms:h1') }}</h1>
+    <p>{{ t('auth-temporary-lockout-sms:p-1') }}</p>
+    <p>{{ t('auth-temporary-lockout-sms:p-2') }}<a id = "sign-in" href="{{ signinLink }}">{{ t('auth-temporary-lockout-sms:sign-inLink') }}</a> {{ t('auth-temporary-lockout-sms:p-3') }}</p>
+    <p>{{ t('auth-temporary-lockout-sms:p-4') }}</p>
+{% endblock %}

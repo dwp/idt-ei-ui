@@ -1,0 +1,7 @@
+gitlab-ci
+test/acceptance
+.gitlab-ci.yml
+.env.example
+.npmrc
+Dockerfile
+package-lock.json

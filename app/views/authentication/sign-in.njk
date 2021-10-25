@@ -1,0 +1,72 @@
+{% extends "../form.njk" %}
+
+{% from "./../fragments/email.njk" import email %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('auth-sign-in:error-title') }}
+    {% else %}
+        {{ t('auth-sign-in:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('auth-sign-in:heading') }}
+            </h1>
+        </legend>
+
+        {{ email(
+            t('auth-sign-in:email.label'),
+            'callbacks[0]',
+            form.callbacks[0] if form,
+            errorsMapped['callbacks[0]']
+        ) }}
+
+        {# ToDo: use password input #}
+        {{ govukInput({
+            label: {
+                text: t('auth-sign-in:password.label')
+            },
+            id: "callbacks[1]",
+            name: "callbacks",
+            classes: "govuk-!-width-full-width",
+            type: "password",
+            errorMessage: {
+                text: errorsMapped['callbacks[1]'].msg
+            } if errorsMapped['callbacks[1]']
+        }) }}
+    </fieldset>
+
+{% endblock %}
+
+{% block nextSteps %}
+
+    <p>
+        <a id="register" href=/register>{{ t('auth-sign-in:registerLink') }}</a>
+        {{ t('auth-sign-in:p1') }}
+    </p>
+
+    <h2 class="govuk-heading-m">
+        {{ t('auth-sign-in:h2') }}
+    </h2>
+
+    <ul class="govuk-list sign-in">
+        <li>
+            <a id="password-reset" href=/password-reset>
+                {{ t('auth-sign-in:forgotPasswordLink') }}
+            </a>
+        </li>
+        <li>
+            <p>
+                <a id="cannot-access-email" href="/account-recovery/cannot-access-email">
+                    {{ t('auth-sign-in:account-recovery') }}
+                </a>
+            </p>
+        </li>
+    </ul>
+
+{% endblock %}

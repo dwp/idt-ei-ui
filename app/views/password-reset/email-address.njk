@@ -1,0 +1,28 @@
+{% extends "../form.njk" %}
+
+{% from "./../fragments/email.njk" import email %}
+
+{% block pageTitle %}
+    {{ t('reset-email:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('reset-email:heading') }}
+            </h1>
+        </legend>
+        <p class="govuk-body">{{ t('reset-email:p-1') }}</p>
+        {{ email(t('reset-email:label'), 'callbacks[0]', form.callbacks[0] if form, errors[0]) }}
+    </fieldset>
+    <input type="hidden" name="callbacks">
+{% endblock %}
+
+{% block nextSteps %}
+    <p class="govuk-body">
+        <a id="cannot-access-email" href="/account-recovery/cannot-access-email">
+            {{ t('reset-email:account-recovery') }}
+        </a>
+    </p>
+{% endblock %}

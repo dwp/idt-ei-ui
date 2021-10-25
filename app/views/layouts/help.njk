@@ -1,0 +1,9 @@
+{% extends "layouts/one-column.njk" %}
+
+{% block mainBeforeContent %}
+    <nav aria-label="{{ t('common:previous-page') }}">
+        <a href="{{ path }}" class="govuk-back-link">
+            {{ t('common:back') }}
+        </a>
+    </nav>
+{% endblock %}

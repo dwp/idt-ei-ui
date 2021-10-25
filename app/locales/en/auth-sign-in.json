@@ -1,0 +1,23 @@
+{
+  "title": "Sign in",
+  "error-title": "Error: Sign in",
+  "heading": "Sign in",
+  "email": {
+    "label": "Email address",
+    "empty": "Enter your email address"
+  },
+  "password": {
+    "label": "Password",
+    "empty": "Enter your password"
+  },
+  "registerLink": "Register now",
+  "p1": "if you have not used this service before.",
+  "h2": "Problems signing in",
+  "forgotPasswordLink": "I forgot my password",
+  "account-recovery": "I cannot access the email I use to sign in",
+  "invalid": {
+    "incorrect": "The email address or password you entered is incorrect",
+    "register": "Register now if you have not used this service before",
+    "warning": "You will be locked out if you enter incorrect sign in details one more time"
+  }
+}

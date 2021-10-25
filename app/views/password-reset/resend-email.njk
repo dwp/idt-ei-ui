@@ -1,0 +1,41 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reset-resend-email:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('reset-resend-email:heading') }}
+            </h1>
+        </legend>
+        
+        <p class="govuk-body">{{ t('reset-resend-email:p-1') }}</p>
+
+        <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                    {{ t('reset-resend-email:p-2') }}
+                </span>
+            </summary>
+            <div class="govuk-details__text">
+                <p>{{ t('reset-resend-email:p-3') }} </p>
+                <p>
+                    <a href="/password-reset/reenter-email-address" id="re-enter-email">{{ t('reset-resend-email:href-1') }}</a>{{ t('reset-resend-email:p-4') }}
+                </p>
+                <p>{{ t('reset-resend-email:p-5') }}</p>
+            </div>
+        </details>
+
+        <p>
+            <a id="cannot-access-email" href="/account-recovery/cannot-access-email">
+                {{ t('reset-resend-email:href-2') }}
+            </a>
+        </p>
+    </fieldset>
+
+    <input type="hidden" name="callbacks" value="resend">
+    <input type="hidden" name="callbacks" value="">
+{% endblock %}

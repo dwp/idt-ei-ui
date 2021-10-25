@@ -1,0 +1,16 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('account-recovery-complete:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title" id="page-heading">
+            {{ t('account-recovery-complete:heading') }}
+        </h1>
+    </div>
+
+    <p class="govuk-body">{{ t('account-recovery-complete:p-1') }}</p>
+    <p class="govuk-body">{{ t('account-recovery-complete:p-2') }}</p>
+{% endblock %}

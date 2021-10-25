@@ -1,0 +1,9 @@
+{
+  "title": "You are locked out",
+  "h1": "You are locked out",
+  "p-1" : "This is because you tried to sign in unsuccessfully too many times. We do this to keep your information secure.",
+  "p-2": "You need to reset your password before you can sign in again.",
+  "button": "Reset password",
+  "details-header": "If you are still locked out after resetting your password"
+}
+  

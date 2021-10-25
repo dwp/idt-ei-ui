@@ -1,0 +1,37 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('account-recovery-resend-sms-code:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('account-recovery-resend-sms-code:heading') }}
+            </h1>
+        </legend>
+
+        <p class="govuk-body">{{ t('account-recovery-resend-sms-code:p-1') }}</p>
+
+        <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                    {{ t('account-recovery-resend-sms-code:p-2') }}
+                </span>
+            </summary>
+
+            <div class="govuk-details__text">
+                <p>
+                    {{ t('account-recovery-resend-sms-code:p-3') }} 
+                    <a href="{{ enterMobileLink }}" id="re-enter-mobile">{{ t('account-recovery-resend-sms-code:href-1') }}</a>
+                    {{ t('account-recovery-resend-sms-code:p-4') }}
+                </p>
+                <p>{{ t('account-recovery-resend-sms-code:p-5') }}</p>
+            </div>
+        </details>
+    </fieldset>
+
+    <input type="hidden" name="callbacks" value="resend">
+    <input type="hidden" name="callbacks" value="">
+{% endblock %}

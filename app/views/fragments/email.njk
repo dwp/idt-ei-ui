@@ -1,0 +1,22 @@
+{% from "components/input/macro.njk" import govukInput %}
+
+{% macro email(label, callback, value, errors) %}
+
+    {{ govukInput({
+        label: {
+            text: label
+        },
+        id: callback,
+        name: 'callbacks',
+        classes: "govuk-!-width-full-width",
+        type: 'text',
+        value: value,
+        attributes: {
+            spellcheck: "false"
+        },
+        errorMessage: {
+            text: errors.msg
+        } if errors
+    }) }}
+
+{% endmacro %}

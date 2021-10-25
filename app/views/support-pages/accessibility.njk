@@ -1,0 +1,100 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {{ t("accessibility:title") }}
+{% endblock %}
+
+{% block mainContent %}
+    <h1 class="govuk-heading-l" id="page-heading">{{ t("accessibility:heading") }}</h1>
+    <p class="govuk-body">{{ t("accessibility:service-summary.p-1") }}</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>{{ t("accessibility:service-summary.li-1") }}</li>
+        <li>{{ t("accessibility:service-summary.li-2") }}</li>
+    </ul>
+    <p class="govuk-body">{{ t("accessibility:accessibility-summary.p-1") }}</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>{{ t("accessibility:accessibility-summary.li-1") }}</li>
+        <li>{{ t("accessibility:accessibility-summary.li-2") }}</li>
+        <li>{{ t("accessibility:accessibility-summary.li-3") }}</li>
+        <li>{{ t("accessibility:accessibility-summary.li-4") }}</li>
+        <li>{{ t("accessibility:accessibility-summary.li-5") }}</li>
+    </ul>
+    <p class="govuk-body">{{ t("accessibility:accessibility-summary.p-2") }}</p>
+    <p class="govuk-body">
+        {{ t("accessibility:accessibility-summary.p-3.text-1") }}
+        <a href="https://mcmw.abilitynet.org.uk">{{ t("accessibility:accessibility-summary.p-3.link-text-1") }}</a>
+        {{ t("accessibility:accessibility-summary.p-3.text-2") }}
+    </p>
+
+    <h2 class="govuk-heading-m">{{ t("accessibility:how-accessible.heading") }}</h2>
+    <p class="govuk-body">
+        {{ t("accessibility:how-accessible.p-1.text-1") }}
+        <a href="https://www.w3.org/TR/WCAG21/">
+            {{ t("accessibility:how-accessible.p-1.link-text-1") }}</a>
+        {{ t("accessibility:how-accessible.p-1.text-2") }}
+        {{ t("accessibility:how-accessible.p-1.text-3") }}
+        <a href="mailto:IDT.Accessibility@dwp.gov.uk?subject=DWP login and identification service">
+            {{ t("accessibility:how-accessible.p-1.link-text-2") }}</a>.
+    </p>
+
+    <h2 class="govuk-heading-m">{{ t("accessibility:feedback-contact.heading") }}</h2>
+    <p class="govuk-body">{{ t("accessibility:feedback-contact.p-1") }}</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>
+            {{ t("accessibility:feedback-contact.li-1.text-1") }}
+            <a href="mailto:IDT.Accessibility@dwp.gov.uk?subject=DWP login and identification service">
+                {{ t("accessibility:feedback-contact.li-1.link-text-1") }}
+            </a>
+            {{ t("accessibility:feedback-contact.li-1.text-2") }}
+        </li>
+    </ul>
+
+    <h2 class="govuk-heading-m">{{ t("accessibility:reporting.heading") }}</h2>
+    <p class="govuk-body">
+        {{ t("accessibility:reporting.p-1.text-1") }}
+        <a href="mailto:IDT.Accessibility@dwp.gov.uk?subject=DWP login and identification service">
+            {{ t("accessibility:reporting.p-1.link-text-1") }}</a>.
+    </p>
+
+    <h2 class="govuk-heading-m">{{ t("accessibility:enforcing.heading") }}</h2>
+    <p class="govuk-body">
+        {{ t("accessibility:enforcing.p-1.text-1") }}
+        <a href="
+            {% if language == 'cy' %}
+                http://eass-ws.custhelp.com/app/home
+            {% else %}
+                https://www.equalityadvisoryservice.com/
+            {% endif %}
+        ">
+        {{ t("accessibility:enforcing.p-1.link-text-1") }}</a>.
+    </p>
+
+    <h1 class="govuk-heading-l">{{ t("accessibility:contact-phone.heading") }}</h1>
+    <p class="govuk-body">{{ t("accessibility:contact-phone.p-1") }}</p>
+    <p class="govuk-body">{{ t("accessibility:contact-phone.p-2") }}</p>
+    <p class="govuk-body">
+        {{ t("accessibility:contact-phone.p-3.text-1") }}
+        <a href="
+            {% if language == 'cy' %}
+                https://www.gov.uk/cysylltu-canolfan-byd-gwaith
+            {% else %}
+                https://www.gov.uk/contact-jobcentre-plus
+            {% endif %}
+        ">
+        {{ t("accessibility:contact-phone.p-3.link-text-1") }}</a>.
+    </p>
+
+    <h1 class="govuk-heading-l">{{ t("accessibility:technical-info.heading") }}</h1>
+    <p class="govuk-body">{{ t("accessibility:technical-info.p-1") }}</p>
+
+    <h2 class="govuk-heading-m">{{ t("accessibility:compliance.heading") }}</h2>
+    <p class="govuk-body">
+        {{ t("accessibility:compliance.p-1.text-1") }}
+        <a href="https://www.w3.org/TR/WCAG21/">{{ t("accessibility:compliance.p-1.link-text-1") }}</a>
+        {{ t("accessibility:compliance.p-1.text-2") }}
+    </p>
+
+    <h1 class="govuk-heading-l">{{ t("accessibility:preparation.heading") }}</h1>
+    <p class="govuk-body">{{ t("accessibility:preparation.p-1") }}</p>
+    <p class="govuk-body">{{ t("accessibility:preparation.p-2") }}</p>
+{% endblock %}

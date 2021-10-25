@@ -1,0 +1,29 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reg-landing:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">{{ t('reg-landing:h1') }}</h1>
+    <p>{{ t('reg-landing:p-1') }}</p>
+    <h2 class="govuk-heading-m">{{ t('reg-landing:h2-1') }}</h2>
+    <p>{{ t('reg-landing:p-2') }}</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>{{ t('reg-landing:li-1') }}</li>
+        <li>{{ t('reg-landing:li-2') }}</li>
+    </ul>
+    <p>{{ t('reg-landing:p-3') }}</p>
+     <ul class="govuk-list govuk-list--bullet">
+            <li>{{ t('reg-landing:li-3') }}</li>
+            <li>{{ t('reg-landing:li-4') }}</li>
+            <li>{{ t('reg-landing:li-5') }}</li>
+            <li>{{ t('reg-landing:li-6') }}</li>
+            <li>{{ t('reg-landing:li-7') }}</li>
+        </ul>
+    <h2 class="govuk-heading-m">{{ t('reg-landing:h2-2') }}</h2>
+    <p>{{ t('reg-landing:p-4') }}</p>
+    <p>{{ t('reg-landing:p-5') }}</p>
+    <p>{{ t('reg-landing:p-6') }}</p>
+    <p>{{ t('reg-landing:p-7') }}</p>
+{% endblock %}

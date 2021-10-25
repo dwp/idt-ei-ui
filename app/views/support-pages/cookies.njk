@@ -1,0 +1,122 @@
+{% extends "../layouts/one-column.njk" %}
+{% from "components/table/macro.njk" import govukTable %}
+{% from "components/radios/macro.njk" import govukRadios %}
+{% from "components/button/macro.njk" import govukButton %}
+{% from "components/notification-banner/macro.njk" import govukNotificationBanner %}
+{% from "components/details/macro.njk" import govukDetails %}
+
+{% block pageTitle %}
+    {{ t('cookies:title') }}
+{% endblock %}
+
+{% block mainContent %}
+    {% if displayCookiesSuccessPanel %}
+        {% set html %}
+            <p class="govuk-notification-banner__heading">
+                You’ve set your cookie preferences.
+                <a class="govuk-notification-banner__link" href="{{ linkToPreviousPage }}">
+                    Go back to the page you were looking at
+                </a>.
+            </p>
+        {% endset %}
+
+        {{ govukNotificationBanner({
+            type: "success",
+            html: html
+        }) }}
+    {% endif %}
+
+
+    <h1 class="govuk-heading-l" id="page-heading">{{ t('cookies:heading') }}</h1>
+    <p class="govuk-body">{{ t('cookies:summary.p-1') }}</p>
+    <p class="govuk-body">{{ t('cookies:summary.p-2') }}</p>
+
+    <h2 class="govuk-heading-m">{{ t('cookies:essential.heading') }}</h2>
+
+    <p class="govuk-body">{{ t('cookies:essential.p-1') }}<p>
+
+    {{ govukTable({
+        head: [
+            { text: t('cookies:essential.table.heading-1') },
+            { text: t('cookies:essential.table.heading-2') },
+            { text: t('cookies:essential.table.heading-3') }
+        ],
+        rows: [[
+            { text: t('cookies:essential.table.row-1.col-1') },
+            { text: t('cookies:essential.table.row-1.col-2') },
+            { text: t('cookies:essential.table.row-1.col-3') }
+        ],
+        [
+            { text: t('cookies:essential.table.row-2.col-1') },
+            { text: t('cookies:essential.table.row-2.col-2') },
+            { text: t('cookies:essential.table.row-2.col-3') }
+        ],
+        [
+            { text: t('cookies:essential.table.row-3.col-1') },
+            { text: t('cookies:essential.table.row-3.col-2') },
+            { text: t('cookies:essential.table.row-3.col-3') }
+        ]]
+    }) }}
+
+    <h2 class="govuk-heading-m">{{ t('cookies:analytics.heading') }}</h2>
+
+    <p class="govuk-body">{{ t('cookies:analytics.p-1') }}<p>
+    <p class="govuk-body">{{ t('cookies:analytics.p-2') }}<p>
+    <p class="govuk-body">{{ t('cookies:analytics.p-3') }}<p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>{{ t('cookies:analytics.li-1') }}</li>
+        <li>{{ t('cookies:analytics.li-2') }}</li>
+        <li>{{ t('cookies:analytics.li-3') }}</li>
+    </ul>
+  
+    {{ govukTable({
+        head: [
+            { text: t('cookies:analytics.table.heading-1') },
+            { text: t('cookies:analytics.table.heading-2') },
+            { text: t('cookies:analytics.table.heading-3') }
+        ],
+        rows: [[
+            { text: t('cookies:analytics.table.row-1.col-1') },
+            { text: t('cookies:analytics.table.row-1.col-2') },
+            { text: t('cookies:analytics.table.row-1.col-3') }
+        ],
+        [
+            { text: t('cookies:analytics.table.row-2.col-1') },
+            { text: t('cookies:analytics.table.row-2.col-2') },
+            { text: t('cookies:analytics.table.row-2.col-3') }
+        ],
+        [
+            { text: t('cookies:analytics.table.row-3.col-1') },
+            { text: t('cookies:analytics.table.row-3.col-2') },
+            { text: t('cookies:analytics.table.row-3.col-3') }
+        ]]
+    }) }}
+
+    <form method="POST">
+        <input type="hidden" name="_csrf" value="{{ csrfToken }}">
+        {{ govukRadios({
+            idPrefix: "use-analytic-cookies",
+            name: "useAnalyticCookies",
+            fieldset: {
+                legend: {
+                    text: t('cookies:analytics.radios.heading'),
+                    classes: "govuk-fieldset__legend--m"
+                }
+            },
+            items: [{
+                value: "accept",
+                text: t('cookies:analytics.radios.accept'),
+                checked: useAnalyticCookiesRadioSelection == "yes"
+            }, {
+                value: "reject",
+                text: t('cookies:analytics.radios.reject'),
+                checked: useAnalyticCookiesRadioSelection == "no"
+            }]
+        }) }}
+
+        {{ govukButton({
+            text: "Save changes"
+        }) }}
+    </form>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('account-recovery-new-mobile-number:error-title') }}
+    {% else %}
+        {{ t('account-recovery-new-mobile-number:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('account-recovery-new-mobile-number:heading') }}
+            </h1>
+        </legend>
+        <p>{{ t('account-recovery-new-mobile-number:p-1') }}</p>
+        <p>{{ t('account-recovery-new-mobile-number:p-2') }}</p>
+
+        {{ govukInput({
+            label: {
+                text: t('account-recovery-new-mobile-number:label')
+            },
+            classes: "govuk-input--width-20",
+            id: 'callbacks[0]',
+            name: 'callbacks',
+            value: form.callbacks[0] if form,
+            inputmode: "numeric",
+            hint: { text : t('account-recovery-new-mobile-number:hint') },
+            attributes: {
+                spellcheck: "false"
+            },
+            errorMessage: {
+                text: errors[0].msg
+            } if errorsMapped['callbacks[0]']
+        }) }}
+    </fieldset>
+    <input type="hidden" name="callbacks">
+{% endblock %}
+

@@ -1,0 +1,25 @@
+{
+  "heading": "Cwcis ar wasanaeth mewngofnodi ac adnabod DWP",
+  "main-banner": {
+    "p-1": "Rydym yn defnyddio rhai cwcis hanfodol i wneud i'r gwasanaeth hwn weithio.",
+    "p-2": "Hoffem hefyd ddefnyddio cwcis dadansoddi fel y gallwn ddeall sut rydych yn defnyddio'r gwasanaeth a gwneud gwelliannau.",
+    "button-accept": "Derbyn cwcis dadansoddi",
+    "button-reject": "Gwrthod cwcis dadansoddi",
+    "href-1": "Edrych ar gwcis"
+  },
+  "acceptance": {
+    "p-1": {
+      "text-1": "Rydych wedi derbyn cwcis ychwanegol. Gallwch",
+      "href-1": "newid eich gosodiadau cwcis",
+      "text-2": "unrhyw bryd."
+    }
+  },
+  "rejection": {
+    "p-1": {
+      "text-1": "Rydych wedi gwrthod cwcis ychwanegol. Gallwch",
+      "href-1": "newid eich gosodiadau cwcis",
+      "text-2": "unrhyw bryd."
+    }
+  }, 
+  "button-hide": "Cuddio'r neges hon"
+}

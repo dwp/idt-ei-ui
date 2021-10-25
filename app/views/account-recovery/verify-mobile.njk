@@ -1,0 +1,48 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('account-recovery-verify-mobile:error-title') }}
+    {% else %}
+        {{ t('account-recovery-verify-mobile:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('account-recovery-verify-mobile:heading') }}
+            </h1>
+        </legend>
+
+        <p class="govuk-body">{{ t('account-recovery-verify-mobile:p-1') }}</p>
+
+        {{ govukInput({
+            label: {
+                text: t('account-recovery-verify-mobile:label')
+            },
+            classes: "govuk-input--width-10",
+            id: 'callbacks[0]',
+            name: 'callbacks',
+            value: form.callbacks[0] if form,
+            inputmode: "numeric",
+            autocomplete: "off",
+            attributes: {
+                spellcheck: "false"
+            },
+            errorMessage: {
+                text: errors[0].msg
+            } if errors[0]
+        }) }}
+    </fieldset>
+    <input type="hidden" name="callbacks">
+{% endblock %}
+
+{% block nextSteps %}
+    <p>
+        <a href="{{ resendSMSLink }}" id="text-not-received">
+            {{ t('account-recovery-verify-mobile:retryLink') }}
+        </a>
+    </p>
+{% endblock %}

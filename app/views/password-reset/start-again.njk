@@ -1,0 +1,18 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reset-start-again:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% set submitButtonText = 'reset-start-again:button' %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">
+        {{ t('reset-start-again:heading') }}
+    </h1>
+    <p class="govuk-body">{{ t('reset-start-again:p-1') }}</p>
+    <input type="hidden" name="callbacks" value="resend">
+    <input type="hidden" name="callbacks" value="">
+{% endblock %}

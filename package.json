@@ -1,0 +1,67 @@
+{
+  "name": "ui",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A custom UI based on GovUK design for ForgeRock (AM/IDM)",
+  "main": "app/bin/www",
+  "scripts": {
+    "start": "env $(cat .env | grep -v ^# | xargs) nodemon -e .js,.njk,.json --watch .",
+    "test": "env $(cat .env.example | grep -v ^# | xargs) jest",
+    "build": "webpack",
+    "lint": "eslint .",
+    "ci": "npm test && npm run lint && npm audit --production --audit-level=high && npm outdated"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/dwp/dynamic-trust-hub/forgerock/idt-ei-ui"
+  },
+  "keywords": [
+    "forgerock",
+    "am",
+    "idm",
+    "ui",
+    "frontend"
+  ],
+  "author": "DWP Digital",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "0.23.0",
+    "connect-redis": "6.0.0",
+    "cookie-parser": "^1.4.5",
+    "csurf": "1.11.0",
+    "express": "^4.17.1",
+    "express-healthcheck": "^0.1.0",
+    "express-session": "1.17.2",
+    "express-validator": "6.13.0",
+    "govuk-frontend": "3.14.0",
+    "helmet": "4.6.0",
+    "http-errors": "^1.8.0",
+    "i18next": "21.3.1",
+    "i18next-fs-backend": "1.1.1",
+    "i18next-http-middleware": "3.1.4",
+    "ioredis": "4.28.0",
+    "lodash": "4.17.21",
+    "moment": "2.29.1",
+    "moment-timezone": "0.5.33",
+    "nocache": "3.0.1",
+    "nunjucks": "3.2.3",
+    "shefcon-dev-idt-node-logger": "^0.1.1",
+    "yargs": "17.2.1"
+  },
+  "devDependencies": {
+    "@dwp/eslint-config-base": "^5.0.1",
+    "css-loader": "6.4.0",
+    "eslint": "7.32.0",
+    "jest": "27.2.5",
+    "jest-axe": "5.0.1",
+    "mini-css-extract-plugin": "2.4.2",
+    "node-html-parser": "5.0.0",
+    "nodemon": "2.0.13",
+    "sass": "1.43.2",
+    "sass-loader": "12.2.0",
+    "style-loader": "3.3.0",
+    "supertest": "6.1.6",
+    "webpack": "5.58.2",
+    "webpack-cli": "4.9.0"
+  }
+}

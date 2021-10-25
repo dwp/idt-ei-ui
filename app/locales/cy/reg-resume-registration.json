@@ -1,0 +1,14 @@
+{
+  "title": "Cwblhau cofrestru",
+  "heading": "Rhaid i chi gwblhau eich cofrestriad cyn i chi fewngofnodi",
+  "p-1": "Mae angen ffôn symudol arnoch i gwblhau eich cofrestriad. Byddwn yn anfon cod diogelwch i'ch ffôn symudol.",
+  "h2": "Pan fyddwch chi'n mewngofnodi am y tro cyntaf",
+  "p-2": "Bydd angen gwybodaeth arnoch o 2 ffynhonnell fel y gallwn wirio ein bod yn delio â'r person iawn. Mae'r rhain yn:",
+  "list": [
+    "pasbort y DU",
+    "slipiau cyflog neu P60",
+    "gwybodaeth am gredydau treth, os ydych yn eu hawlio",
+    "manylion eich cofnod credyd"
+  ],
+  "button": "Cwblhau cofrestru"
+}

@@ -1,0 +1,63 @@
+{
+  "service-name": "",
+  "change-language": "newid iaith",
+  "back": "Yn ôl",
+  "continue": "Parhau",
+  "try-again": "Rhowch gynnig arall",
+  "another-way": "Cadarnhau fy hunaniaeth mewn ffordd arall",
+  "skip": "Neidio i'r prif gynnwys",
+  "english": "English",
+  "welsh": "Cymraeg",
+  "error": "Gwall",
+  "previous-page": "tudalen flaenorol",
+  "phase-banner": "Mae hwn yn wasanaeth newydd - bydd eich <a class=\"govuk-link\" href=\"#\"> adborth </a> yn ein helpu i'w wella.",
+  "signout": "Allgofnodi",
+  "footer-links": {
+    "accessibility": "Hygyrchedd",
+    "cookies": "Cwcis",
+    "privacy": "Preifatrwydd (agor mewn tab newydd)"
+  },
+  "error-summary-heading": "Mae yna broblem",
+  "errors": {
+    "email": {
+      "empty": "Rhowch eich cyfeiriad e-bost",
+      "invalid": "Rhowch gyfeiriad e-bost yn y ffurf cywir, fel name@example.com"
+    },
+    "password": {
+      "empty": "Rhowch y cyfrinair yr hoffech ei ddefnyddio",
+      "empty-confirm": "Ail-nodwch eich cyfrinair",
+      "unmatched": "Nid yw'ch cyfrineiriau'n cyfateb",
+      "length": "Rhaid i'r cyfrinair fod yn 8 nod neu fwy",
+      "conditions": "Rhaid i'r cyfrinair gynnwys o leiaf un llythyren fras, un llythyren fach, un rhif ac o leiaf un o'r nodau arbennig hyn: @ # $ % ^ & * - _ ; ! + = [ ] { } | : ' , . ? / ` ~ \" ( )",
+      "invalid": "Rhaid i gyfrinair gynnwys llythrennau, rhifau, a'r nodau arbennig hyn yn unig: @ # $ % ^ & * - _ ; ! + = [ ] { } | : ' , . ? / ` ~ \" ( )"
+    },
+    "security-code": {
+      "empty": "Rhowch eich cod diogelwch",
+      "incorrect-security-code": "Nid yw'r cod diogelwch yn cyfateb gyda'r un y gwnaethom yrru i chi",
+      "expired": "Mae'r cod diogelwch hwn wedi dod i ben. Rydym wedi anfon cod newydd atoch."
+    },
+    "mobile": {
+      "invalid": "Rhaid i rifau symudol y DU ddechrau gyda 07. Rhaid i rifau rhyngwladol ddechrau gyda chod gwlad."
+    },
+    "name": {
+      "first-name-empty": "Rhowch eich enw cyntaf",
+      "first-name-invalid": "Rhaid i'r enw cyntaf ond cynnwys llythrennau a i z, cysylltnodau, bylchau ac chollnodau yn unig",
+      "last-name-empty": "Rhowch eich enw olaf",
+      "last-name-invalid": "Rhaid i'r enw olaf ond cynnwys llythrennau a i z, cysylltnodau, bylchau ac chollnodau yn unig"
+    },
+    "date-of-birth": {
+      "empty": "Rhowch eich dyddiad geni",
+      "invalid": "Rhaid i'r dyddiad geni fod yn ddyddiad go iawn",
+      "past": "Gwiriwch y flwyddyn y cawsoch eich geni",
+      "future": "Rhaid i'r dyddiad geni fod yn y gorffennol",
+      "year": "Rhaid i'r flwyddyn fod yn 4 digid"
+    },
+    "postcode": {
+      "empty": "Rhowch eich cod post",
+      "invalid": "Rhowch god post go iawn"
+    },
+    "changePassword": {
+      "empty": "Dewiswch ie os ydych chi am newid eich cyfrinair"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "title": "You are still locked out",
+  "h1": "You are still locked out",
+  "p-1" : "This is because you tried to enter your security code unsuccessfully too many times.",
+  "p-2": "You will be able to ",
+  "passwordResetLink": "try again",
+  "p-3": " after 15 minutes have passed from when you last tried to reset your password."
+}

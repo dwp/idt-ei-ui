@@ -1,0 +1,25 @@
+{% extends "../layouts/one-column.njk" %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('account-recovery-email-already-registered:error-title') }}
+    {% else %}
+        {{ t('account-recovery-email-already-registered:title') }}
+    {% endif %}
+
+{% endblock %}
+
+{% block mainContent %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('account-recovery-email-already-registered:heading') }}
+            </h1>
+        </legend>
+        <p>{{ t('account-recovery-email-already-registered:p-1') }} <a href="{{ enterEmailLink }}">{{ t('account-recovery-email-already-registered:href-1') }}</a></p>
+        <p>{{ t('account-recovery-email-already-registered:p-2') }} <a href="{{ signinLink }}">{{ t('account-recovery-email-already-registered:href-2') }}</a></p>
+        <p>{{ t('account-recovery-email-already-registered:p-3') }} <a href="{{passwordResetPath}}">{{ t('account-recovery-email-already-registered:href-3') }}</a></p>
+        <p>{{ t('account-recovery-email-already-registered:p-4') }} <a href="/register">{{ t('account-recovery-email-already-registered:href-4') }}</a></p>
+        <p>{{ t('account-recovery-email-already-registered:p-5') }} <a href="#">{{ t('account-recovery-email-already-registered:href-5') }}</a></p>
+    </fieldset>
+{% endblock %}

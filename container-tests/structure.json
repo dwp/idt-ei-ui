@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "2.0.0",
+  "fileExistenceTests": [
+    {
+      "name": "package.json exists",
+      "path": "/app/package.json",
+      "shouldExist": true
+    },
+    {
+      "name": "app directory exists",
+      "path": "/app/app",
+      "shouldExist": true
+    },
+    {
+      "name": "app.js exists",
+      "path": "/app/app/app.js",
+      "shouldExist": true
+    },
+    {
+      "name": "node_modules directory exists",
+      "path": "/app/node_modules",
+      "shouldExist": true,
+      "uid": 1000,
+      "gid": 1000   
+    }
+  ]
+}

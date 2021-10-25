@@ -1,0 +1,6 @@
+{
+  "title": "Start again",
+  "heading": "You need to start your registration again",
+  "p-1": "This is because you have entered too many security codes that have expired. Codes must be entered within 5 minutes.",
+  "button": "Start again"
+}

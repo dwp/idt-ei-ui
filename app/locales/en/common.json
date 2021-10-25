@@ -1,0 +1,63 @@
+{
+  "service-name": "",
+  "change-language": "change language",
+  "back": "Back",
+  "continue": "Continue",
+  "try-again": "Try again",
+  "another-way": "Confirm my identity another way",
+  "skip": "Skip to main content",
+  "english": "English",
+  "welsh": "Cymraeg",
+  "error": "Error",
+  "previous-page": "previous page",
+  "phase-banner": "This is a new service – your <a class=\"govuk-link\" href=\"#\">feedback</a> will help us to improve it.",
+  "signout": "Sign out",
+  "footer-links": {
+    "accessibility": "Accessibility",
+    "cookies": "Cookies",
+    "privacy": "Privacy (opens in new tab)"
+  },
+  "error-summary-heading": "There is a problem",
+  "errors": {
+    "email": {
+      "empty": "Enter your email address",
+      "invalid": "Enter an email address in the correct format, like name@example.com"
+    },
+    "password": {
+      "empty": "Enter the password you'd like to use",
+      "empty-confirm": "Re-enter your password",
+      "unmatched": "Your passwords do not match",
+      "length": "Password must be 8 characters or more",
+      "conditions": "Password must include at least one uppercase letter, one lowercase letter and number and at least one of these special characters: @ # $ % ^ & * - _ ; ! + = [ ] { } | : ' , . ? / ` ~ \" ( )",
+      "invalid": "Password must only include letters, numbers, and these special characters: @ # $ % ^ & * - _ ; ! + = [ ] { } | : ' , . ? / ` ~ \" ( )"
+    },
+    "security-code": {
+      "empty": "Enter your security code",
+      "incorrect-security-code": "Security code does not match the one we sent you",
+      "expired": "This security code has expired. We have sent you a new code."
+    },
+    "mobile": {
+      "invalid": "UK mobile numbers must start with 07. International numbers must start with a country code."
+    },
+    "name": {
+      "first-name-empty": "Enter your first name",
+      "first-name-invalid": "First name must only include letters a to z, hyphens, spaces and apostrophes",
+      "last-name-empty": "Enter your last name",
+      "last-name-invalid": "Last name must only include letters a to z, hyphens, spaces and apostrophes"
+    },
+    "date-of-birth": {
+      "empty": "Enter your date of birth",
+      "invalid": "Date of birth must be a real date",
+      "past": "Check the year you were born",
+      "future": "Date of birth must be in the past",
+      "year": "Year must be 4 digits"
+    },
+    "postcode": {
+      "empty": "Enter your postcode",
+      "invalid": "Enter a real postcode"
+    },
+    "changePassword": {
+      "empty": "Select yes if you want to change your password"
+    }
+  }
+}

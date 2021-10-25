@@ -1,0 +1,11 @@
+{
+  "title": "What is your name?",
+  "error-title": "Error: What is your name?",
+  "heading": "What is your name?",
+  "first-name": {
+    "text": "First name"
+  },
+  "last-name": {
+    "text": "Last name"
+  }
+}

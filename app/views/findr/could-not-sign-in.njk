@@ -1,0 +1,19 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('findr-info-required:title') }}
+{% endblock %}
+
+{% set submitButtonText = serviceSupportButtonText %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('findr-info-required:title') }}
+            </h1>
+        </legend>
+
+        <p class="govuk-body">{{ serviceSupportInstructions }}</p>
+    </fieldset>
+{% endblock %}

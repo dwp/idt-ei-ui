@@ -1,0 +1,55 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('findr-name:error-title') }}
+    {% else %}
+        {{ t('findr-name:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('findr-name:heading') }}
+            </h1>
+        </legend>
+
+        {{ govukInput({
+            label: {
+                text: t('findr-name:first-name.text')
+            },
+            id: 'callbacks[0]',
+            name: 'callbacks',
+            classes: "govuk-!-width-full-width",
+            type: 'text',
+            attributes: {
+                spellcheck: "false"
+            },
+            value: form.callbacks[0] if form,
+            errorMessage: {
+                text: errorsMapped['callbacks[0]'].msg
+            } if errorsMapped['callbacks[0]']
+        }) }}
+
+        {{ govukInput({
+            label: {
+                text: t('findr-name:last-name.text')
+            },
+            id: "callbacks[1]",
+            name: "callbacks",
+            classes: "govuk-!-width-full-width",
+            type: "text",
+            attributes: {
+                spellcheck: "false"
+            },
+            value: form.callbacks[1] if form,
+            errorMessage: {
+                text: errorsMapped['callbacks[1]'].msg
+            } if errorsMapped['callbacks[1]']
+        }) }}
+    </fieldset>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<dialog 
+    id="js-timeout-warning"
+    class="govuk-timeout-warning dialog" 
+    data-module="govuk-timeout-warning"
+    data-minutes-idle-timeout="{{ data['modalIdleTime'] or '20'}}"
+    data-minutes-modal-visible="{{ data['modalVisibleTime'] or '1'}}"
+    data-minutes-with-activity-timeout="{{ data['activityTimeOut'] or 360 }}"
+    data-url-redirect="{{ sessionTimeoutPath }}"
+    data-text="{{ data.timeoutText }}"
+    data-extra-text="{{ data.timeoutExtraText }}"
+    role="dialog"
+    aria-live="polite"
+    aria-labelledby="dialog-title"
+    aria-describedby="at-timer"
+>
+    <h1 id="dialog-title" class="govuk-heading-l">
+        {{ timeoutWarningHeading }}
+    </h1>
+
+    <div class="govuk-body">
+        <div class="timer" aria-hidden="true" aria-relevant="additions"></div>
+        <div class="at-timer govuk-visually-hidden" role="status" id="at-timer"></div>
+    </div>
+
+    <button class="govuk-button dialog-button js-dialog-close" data-module="govuk-button">
+        {{ timeoutWarningButton }}
+    </button>
+</dialog>

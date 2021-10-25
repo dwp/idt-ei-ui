@@ -1,0 +1,82 @@
+{
+  "title": "Datganiad hygyrchedd",
+  "heading": "Datganiad hygyrchedd i'r gwasanaeth mewngofnodi ac adnabod DWP",
+  "service-summary": {
+    "p-1": "Mae'r datganiad hygyrchedd hwn yn berthnasol i wasanaeth mewngofnodi ac adnabod yr Adran Gwaith a Phensiynau (DWP). Mae'r gwasanaeth hwn yn caniatáu i ddinasyddion gyrchu gwasanaethau ar-lein DWP eraill drwy:",
+    "li-1": "creu manylion mewngofnodi amldro",
+    "li-2": "defnyddio ' Identity Verification' Cyllid a Thollau EM (HMRC IV) i brofi eu hunaniaeth"
+  },
+  "accessibility-summary": {
+    "p-1": "Mae’r gwasanaeth hwn yn cael ei redeg gan DWP. Rydym eisiau cyn gymaint o bobl â phosibl i allu defnyddio’r gwasanaeth. Er enghraifft, mae hyn yn golygu y dylech allu:",
+      "li-1": "newid lliwiau, lefelau cyferbyniad a ffontiau",
+      "li-2": "chwyddo hyd at 300% heb i’r testun fynd oddi ar y sgrin",
+    "li-3": "llywio drwy'r rhan fwyaf o'r wefan gan ddefnyddio bysellfwrdd yn unig",
+    "li-4": "llywio drwy'r rhan fwyaf o'r wefan gan ddefnyddio meddalwedd adnabod lleferydd",
+    "li-5": "gwrando ar rhan fwyaf o'r wefan gan ddefnyddio darllenydd sgrin (yn cynnwys y fersiynau diweddaraf o JAWS, NVDA a VoiceOver)",
+    "p-2": "Rydym hefyd wedi gwneud cynnwys y wefan mor syml â phosibl i’w ddeall.",
+    "p-3": {
+      "text-1": "Mae gan ",
+      "link-text-1": "AbilityNet",
+      "text-2": "gyngor ar wneud eich dyfais yn haws i’w defnyddio os oes gennych anabledd."
+    }
+  },
+  "how-accessible": {
+    "heading": "Pa mor hygyrch yw’r wefan hon",
+    "p-1": {
+      "text-1": "Mae'r wefan hon yn cydymffurfio'n llwyr â'r",
+      "link-text-1": "Web Content Accessibility Guidelines version 2.1",
+      "text-2": "safon AA.",
+      "text-3": "Efallai y bydd problemau hygyrchedd mewn rhannau nad ydynt yn dod o dan safon AA: rhowch wybod i ni am y rhain yn",
+      "link-text-2": "IDT.Accessibility@dwp.gov.uk"
+    }
+  },
+  "feedback-contact": {
+    "heading": "Adborth a manylion cyswllt",
+    "p-1": "Os ydych angen gwybodaeth sydd ar y wefan hon mewn ffurf gwahanol fel PDF hygyrch, print bras, hawdd ei ddarllen, recordiad sain neu braille:",
+    "li-1": {
+      "text-1": "e-bostiwch",
+      "link-text-1": "IDT.Accessibility@dwp.gov.uk",
+      "text-2": "gyda'r ffurf rydych ei angen. Dylech gynnwys eich manylion cyswllt a'ch hoff ddull cyswllt."
+    }
+  },
+  "reporting": {
+    "heading": "Rhoi gwybod am broblemau hygyrchedd gyda’r wefan hon",
+    "p-1": {
+      "text-1": "Rydym bob amser yn ceisio gwella hygyrchedd y wefan hon. Os byddwch yn dod o hyd i unrhyw broblemau nad ydynt wedi’u rhestru ar y dudalen hon neu’n credu nad ydym yn cwrdd â gofynion hygyrchedd, cysylltwch â:",
+      "link-text-1": "IDT.Accessibility@dwp.gov.uk"
+    }
+  },
+  "enforcing": {
+    "heading": "Y drefn gorfodaeth",
+    "p-1": {
+      "text-1": "Mae’r Comisiwn Cydraddoldeb a Hawliau Dynol (EHRC) yn gyfrifol am orfodi’r ’Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018’ y ’rheolaethau hygyrchedd’). Os nad ydych yn hapus â sut rydym yn ymateb i’ch cwyn,",
+      "link-text-1": "cysylltwch â’r Gwasanaeth Cynghori a Chefnogaeth Cydraddoldeb (EASS)"
+    }
+  },
+  "contact-phone": {
+    "heading": "Cysylltu â ni dros y ffôn neu ymweld â ni'n bersonol",
+    "p-1": "Rydym yn darparu gwasanaeth testun 'relay'i bobl sy'n B/byddar, gyda nam ar eu clyw neu amhariad ar eu lleferydd.",
+    "p-2": "Mae gan yn ein swyddfeydd dolenni sain, neu os byddwch yn cysylltu â ni cyn eich ymweliad gallwn drefnu dehonglydd Iaith Arwyddion Prydain (BSL).",
+    "p-3": {
+      "text-1": "I ddarganfod mwy am y gwasanaethau hyn",
+      "link-text-1": "cysylltwch â'r Ganolfan Byd Gwaith"
+    }
+  },
+  "technical-info": {
+    "heading": "Gwybodaeth dechnegol am hygyrchedd y wefan hon",
+    "p-1": "Mae’r DWP wedi ymrwymo i wneud y wefan hon yn hygyrch, yn unol â ’Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018’."
+  },
+  "compliance": {
+    "heading": "Statws cydymffuriaeth",
+    "p-1": {
+      "text-1": "Mae'r wefan hon yn cydymffurfio'n llwyr â'r",
+      "link-text-1": "Web Content Accessibility Guidelines version 2.1",
+      "text-2": "safon AA."
+    }
+  },
+  "preparation": {
+    "heading": "Paratoi'r datganiad hygyrchedd hwn",
+    "p-1": "Paratowyd y datganiad hwn ar 15 Tachwedd 2021. Fe'i hadolygwyd ddiwethaf ar 15 Tachwedd 2021.",
+    "p-2": "Profwyd y wefan hon ddiwethaf ar 15 Tachwedd 2021. Cynhaliwyd y prawf gan 'DWP Digital' ar bob tudalen."
+  }
+}

@@ -1,0 +1,16 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reg-complete:title') }}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('reg-complete:heading') }}
+            </h1>
+        </legend>
+    </fieldset>
+    <p>{{ t('reg-complete:p-1') }}</p>
+{% endblock %}

@@ -1,0 +1,163 @@
+{% extends "template.njk" %}
+
+{% from "components/header/macro.njk" import govukHeader %}
+{% from "components/phase-banner/macro.njk" import govukPhaseBanner %}
+{% from "components/panel/macro.njk" import govukPanel %}
+{% from "components/footer/macro.njk" import govukFooter %}
+{% from "components/cookie-banner/macro.njk" import govukCookieBanner %}
+{% from "components/back-link/macro.njk" import govukBackLink %}
+
+{% set htmlLang = language %}
+{% set htmlLang = "en" if htmlLang == "en-US" else htmlLang %}
+
+{% block pageTitle %}
+  {{ t('common:service-name') }}
+{% endblock %}
+
+{% block skipLink %}
+  {{ govukSkipLink({
+    href: "#main-content",
+    text: t('common:skip')
+  }) }}
+{% endblock %}
+
+{% block header %}
+
+  {% if allowGoogleAnalytics %}
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+  {% endif %}
+
+  {% include '../fragments/cookies-banner.njk' %}
+
+  {{ govukHeader({
+    homepageUrl: "https://www.gov.uk/",
+    serviceName: t('common:service-name'),
+    serviceUrl: "#"
+  }) }}
+{% endblock %}
+
+{% block beforeContent %}
+  <nav id="nav-lang" aria-label="{{ t('common:change-language') }}">
+    {{ govukPhaseBanner({
+      tag: {
+        text: "alpha"
+      },
+      html: t('common:phase-banner')
+    }) }}
+
+    {% if displayBackLink %}
+      {{ govukBackLink({
+        text: "Back",
+        href: backLinkUrl
+      }) }}
+    {% endif %}
+
+    <ul class="govuk-list language-toggle">
+      <li id="li-en" lang="en">
+        {% if language == 'cy' %}
+          <a id="link-en" href="?lng=en">{{ t('common:english') }}</a>
+        {% else %}
+          {{ t('common:english') }}
+        {% endif %}
+      </li>
+      <li id="li-cy" lang="cy">
+        {% if (language == 'cy') %}
+          {{ t('common:welsh') }}
+        {% else %}
+          <a id="link-cy" href="?lng=cy">{{ t('common:welsh') }}</a>
+        {% endif %}
+      </li>
+    </ul>
+  </nav>
+  {% block mainBeforeContent %}{% endblock %}
+{% endblock %}
+
+{% block head %}
+  <meta name="robots" content="noindex, nofollow">
+  {% block meta %}{% endblock %}
+  <script>
+    (function () {
+      window.onpageshow = function(event) {
+        if (event.persisted) {
+          window.location.reload();
+        }
+      };
+    })();
+  </script>
+  <link href="/css/all.css" rel="stylesheet">
+  <style>
+    ul.language-toggle {
+      float: right;
+      width: 50%;
+      text-align: right;
+      margin-top: 1rem;
+      margin-bottom: 0;
+    }
+    ul.language-toggle li {
+      display: inline-block;
+      padding-left: 1rem;
+      border-left: 0.15rem solid currentColor;
+      margin-left: 0.66rem;
+    }
+    ul.language-toggle li:first-child {
+      padding-left: 0;
+      border-left: none;
+      margin-left: 0;
+    }
+    @media (max-width: 640px) {
+      ul.language-toggle {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+  {% block styles %}{% endblock %}
+{% endblock %}
+
+{% block bodyEnd %}
+  <!--[if !IE 8]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dialog-polyfill/0.5.0/dialog-polyfill.js"></script>
+  <!--<![endif]-->
+  <script src="/js/all-min.js"></script>
+{% endblock %}
+
+{% block footer %}
+  {% if (language == 'cy') %}
+    {% set href = "https://www.gov.uk/government/organisations/department-for-work-pensions/about/personal-information-charter.cy" %}
+  {% else %}
+    {% set href = "http://www.gov.uk/dwp/personal-information-charter" %}
+  {% endif %}
+  
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/accessibility-statement",
+          text: t("common:footer-links.accessibility")
+        },
+        {
+          href: "/cookies",
+          text: t("common:footer-links.cookies")
+        },
+        {
+          href: href,
+          text: t("common:footer-links.privacy"),
+          attributes: {
+            target: "_blank",
+            rel: "noopener noreferrer"
+          }
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

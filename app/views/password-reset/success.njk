@@ -1,0 +1,21 @@
+{% extends "../form.njk" %}
+{% set submitButtonText = 'reset-success:button' %}
+
+{% block pageTitle %}
+    {{ t('reset-success.title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% block formElements %}
+
+    <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title" id="page-heading">
+            {{ t('reset-success:title') }}
+        </h1>
+    </div>
+
+    <p>{{ t('reset-success:p-1') }}</p>
+    <p>{{ t('reset-success:p-2') }}</p>
+
+{% endblock %}

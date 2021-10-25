@@ -1,0 +1,11 @@
+{
+  "title": "Beth yw eich enw?",
+  "error-title": "Gwall: Beth yw eich enw?",
+  "heading": "Beth yw eich enw?",
+  "first-name": {
+    "text": "Enw cyntaf"
+  },
+  "last-name": {
+    "text": "Enw olaf"
+  }
+}

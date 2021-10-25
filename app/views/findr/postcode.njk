@@ -1,0 +1,40 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('findr-postcode:error-title') }}
+    {% else %}
+        {{ t('findr-postcode:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('findr-postcode:heading') }}
+            </h1>
+        </legend>
+
+        {{ govukInput({
+            label: {
+                text: t('findr-postcode:label')
+            },
+            id: 'callbacks[0]',
+            name: 'callbacks',
+            classes: "govuk-!-width-one-third",
+            type: 'text',
+            attributes: {
+                spellcheck: "false"
+            },
+            value: form.callbacks[0] if form,
+            errorMessage: {
+                text: errorsMapped['callbacks[0]'].msg
+            } if errorsMapped['callbacks[0]']
+        }) }}
+    </fieldset>
+    
+    <input type="hidden" name="callbacks">
+
+{% endblock %}

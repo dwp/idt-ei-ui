@@ -1,0 +1,12 @@
+{
+  "title": "Enter your mobile phone number",
+  "error-title": "Error: Enter your mobile phone number",
+  "heading": "Enter your mobile phone number",
+  "p-1": "We will send a security code to this number.",
+  "p-2": "Whenever you sign in to this service we will send a new security code.",
+  "label": "Mobile phone number",
+  "hint": "For international numbers include the country code",
+  "error": {
+    "empty":"Enter your mobile phone number"
+  }
+}

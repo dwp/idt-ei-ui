@@ -1,0 +1,9 @@
+{
+  "title": "We have sent you a text message with your security code",
+  "error-title": "Error: We have sent you a text message with your security code",
+  "heading": "We have sent you a text message with your security code",
+  "p-1": "It should take one minute to arrive.",
+  "label": "Security code",
+  "retryLink": "I did not get a text message",
+  "accountRecoveryLink": "I cannot access the mobile phone number I use to sign in"
+}

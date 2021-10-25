@@ -1,0 +1,29 @@
+{% extends "../form.njk" %}
+
+{% from "./../fragments/email.njk" import email %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('reg-email:error-title') }}
+    {% else %}
+        {{ t('reg-email:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('reg-email:heading') }}
+            </h1>
+        </legend>
+        <p class="govuk-body">{{ t('reg-email:p-1') }}</p>
+        {{ email(
+            t('reg-email:label'), 
+            'callbacks[0]', 
+            form.callbacks[0] if form, 
+            errors[0]
+        ) }}
+    </fieldset>
+    <input type="hidden" name="callbacks" />
+{% endblock %}

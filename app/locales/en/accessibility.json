@@ -1,0 +1,82 @@
+{
+  "title": "Accessibility statement",
+  "heading": "Accessibility statement for the DWP login and identification service",
+  "service-summary": {
+    "p-1": "This accessibility statement applies to the Department for Work and Pensions (DWP) login and identification service. This service allows citizens to access other DWP online services by:",
+    "li-1": "creating reusable credentials",
+    "li-2": "using HM Revenue & Customs Identity Verification (HMRC IV) to prove their identity"
+  },
+  "accessibility-summary": {
+    "p-1": "This website is run by DWP. We want as many people as possible to be able to use this website. For example, that means you should be able to:",
+    "li-1": "change colours, contrast levels and fonts",
+    "li-2": "zoom in up to 300% without the text spilling off the screen",
+    "li-3": "navigate most of the website using just a keyboard",
+    "li-4": "navigate most of the website using speech recognition software",
+    "li-5": "listen to most of the website using a screen reader (including the most recent versions of JAWS, NVDA and VoiceOver)",
+    "p-2": "We have also made the website text as simple as possible to understand.",
+    "p-3": {
+      "text-1": "",
+      "link-text-1": "AbilityNet",
+      "text-2": "has advice on making your device easier to use if you have a disability."
+    }
+  },
+  "how-accessible": {
+    "heading": "How accessible this website is",
+    "p-1": {
+      "text-1": "This website is fully compliant with the",
+      "link-text-1": "Web Content Accessibility Guidelines version 2.1",
+      "text-2": "AA standard.",
+      "text-3": "There may be accessibility problems in areas not covered by the AA standard: please let us know about these at",
+      "link-text-2": "IDT.Accessibility@dwp.gov.uk"
+    }
+  },
+  "feedback-contact": {
+    "heading": "Feedback and contact information",
+    "p-1": "If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:",
+    "li-1": {
+      "text-1": "email",
+      "link-text-1": "IDT.Accessibility@dwp.gov.uk",
+      "text-2": "with the format you need. Include your contact details and your preferred method of contact."
+    }
+  },
+  "reporting": {
+    "heading": "Reporting accessibility problems with this website",
+    "p-1": {
+      "text-1": "We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact:",
+      "link-text-1": "IDT.Accessibility@dwp.gov.uk"
+    }
+  },
+  "enforcing": {
+    "heading": "Enforcement procedure",
+    "p-1": {
+      "text-1": "The Equality and Human Rights Commission (EHRC) is responsible for enforcing the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018 (the ‘accessibility regulations’). If you’re not happy with how we respond to your complaint,",
+      "link-text-1": "contact the Equality Advisory and Support Service (EASS)"
+    }
+  },
+  "contact-phone": {
+    "heading": "Contacting us by phone or visiting us in person",
+    "p-1": "We provide a text relay service for people who are D/deaf, hearing impaired or have a speech impediment.",
+    "p-2": "Our offices have audio induction loops, or if you contact us before your visit we can arrange a British Sign Language (BSL) interpreter.",
+    "p-3": {
+      "text-1": "To find out more about these services",
+      "link-text-1": "contact Jobcentre Plus"
+    }
+  },
+  "technical-info": {
+    "heading": "Technical information about this website’s accessibility",
+    "p-1": "DWP is committed to making its website accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018."
+  },
+  "compliance": {
+    "heading": "Compliance status",
+    "p-1": {
+      "text-1": "This website is fully compliant with the",
+      "link-text-1": "Web Content Accessibility Guidelines version 2.1",
+      "text-2": "AA standard."
+    }
+  },
+  "preparation": {
+    "heading": "Preparation of this accessibility statement",
+    "p-1": "This statement was prepared on 15 November 2021. It was last reviewed on 15 November 2021.",
+    "p-2": "This website was last tested on 15 November 2021. The test was carried out by DWP Digital on all pages."
+  }
+}

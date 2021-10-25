@@ -1,0 +1,14 @@
+{
+  "title": "This email address is not registered with this service",
+  "heading": "This email address is not registered with this service",
+  "p-1": "You need to register before you use this service.",
+  "p-2": "If you have not registered with this service yet, ",
+  "href-1": "register now",
+  "p-3": ".",
+  "p-4": "If you have registered with a different email address, ",
+  "href-2": "sign in using that email address",
+  "p-5": ".",
+  "p-6": "If you have registered but no longer have access to the email you used to register, you will need to ",
+  "href-3": "register again with your new email address",
+  "p-7": "."
+}

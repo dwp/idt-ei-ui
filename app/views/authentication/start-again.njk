@@ -1,0 +1,24 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('auth-start-again:title') }}
+{% endblock %}
+
+{% set submitButtonText = 'auth-start-again:button' %}
+
+{% block formElements %}
+
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('auth-start-again:heading') }}
+            </h1>
+        </legend>
+
+        <p class="govuk-body">{{ t('auth-start-again:p-1') }}</p>
+    </fieldset>
+
+    <input type="hidden" name="callbacks" value="resend"/>
+    <input type="hidden" name="callbacks" value="" />
+
+{% endblock %}

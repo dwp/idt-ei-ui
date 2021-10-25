@@ -1,0 +1,40 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {% if errors[0] %}
+        {{ t('account-recovery-email-address:error-title') }}
+    {% else %}
+        {{ t('account-recovery-email-address:title') }}
+    {% endif %}
+{% endblock %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('account-recovery-email-address:heading') }}
+            </h1>
+        </legend>
+
+        <p>{{ t('account-recovery-email-address:p-1') }}</p>
+
+        {{ govukInput({
+            label: {
+                text: t('auth-sign-in:email.label')
+            },
+            id: 'callbacks[0]',
+            name: 'callbacks',
+            classes: "govuk-!-width-full-width",
+            type: 'text',
+            attributes: {
+                spellcheck: "false"
+            },
+            value: form.callbacks[0] if form,
+            errorMessage: {
+                text: errorsMapped['callbacks[0]'].msg
+            } if errorsMapped['callbacks[0]']
+        }) }}
+    </fieldset>
+    <input type="hidden" name="callbacks">
+{% endblock %}
+

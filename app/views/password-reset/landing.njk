@@ -1,0 +1,27 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('reset-landing:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">{{ t('reset-landing:h1') }}</h1>
+    <p>{{ t('reset-landing:p-1') }}</p>
+{% endblock %}
+
+{% block nextSteps %}
+    <ul class="govuk-list sign-in">
+        <li>
+            <a id="cannot-access-email" href="/account-recovery/cannot-access-email">
+                {{ t('reset-landing:href-1') }}
+            </a>
+        </li>
+        <li>
+            <a id="cannot-access-mobile" href="/account-recovery/start-update-mobile">
+                {{ t('reset-landing:href-2') }}
+            </a>
+        </li>
+    </ul>
+{% endblock %}

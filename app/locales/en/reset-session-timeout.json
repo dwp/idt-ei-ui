@@ -1,0 +1,7 @@
+{
+  "title": "Reset password stopped",
+  "heading": "Reset password stopped",
+  "p-1": "You were stopped from resetting your password because no information was entered for 20 minutes. You can start the process again whenever you are ready.",
+  "p-2": "This keeps your information secure.",
+  "button": "Start again"
+}

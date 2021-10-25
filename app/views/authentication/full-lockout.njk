@@ -1,0 +1,32 @@
+{% extends "../form.njk" %}
+
+{% set submitButtonText = 'auth-full-lockout:button' %}
+
+{% block formElements %}
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('auth-full-lockout:title') }}
+            </h1>
+        </legend>
+        
+        <p>{{ t('auth-full-lockout:p-1') }}</p>
+        <p>{{ t('auth-full-lockout:p-2') }}</p>
+    </fieldset>
+{% endblock %}
+
+{% block nextSteps %} 
+    <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+                {{ t('auth-full-lockout:details-header') }}
+            </span>
+        </summary>
+
+        <div class="govuk-details__text">
+            <p>
+                {{ serviceSupportInstructions }}
+            </p>
+        </div>
+    </details>
+{% endblock %}

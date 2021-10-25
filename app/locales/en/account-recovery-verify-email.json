@@ -1,0 +1,8 @@
+{
+  "title": "We have sent you an email with your security code",
+  "error-title": "Error: We have sent you an email with your security code",
+  "heading": "We have sent you an email with your security code",
+  "p-1": "It should take one minute to arrive.",
+  "label": "Security code",
+  "retryLink": "I did not get the email"
+}

@@ -1,0 +1,24 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('auth-last-login:title') }}
+{% endblock %}
+
+{% set submitButtonText = 'auth-last-login:button' %}
+
+{% block formElements %}
+
+    <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading" id="page-heading">
+                {{ t('auth-last-login:heading') }}
+            </h1>
+        </legend>
+
+        <p class="govuk-body">{{ t('auth-last-login:p-1') }} {{time}} {{ t('auth-last-login:p-2') }} {{date}}.</p>
+    </fieldset>
+
+    <input type="hidden" name="callbacks" value="resend"/>
+    <input type="hidden" name="callbacks" value="" />
+
+{% endblock %}

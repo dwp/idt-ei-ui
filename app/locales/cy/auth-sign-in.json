@@ -1,0 +1,23 @@
+{
+  "title": "Mewngofnodi",
+  "error-title": "Gwall: Mewngofnodi",
+  "heading": "Mewngofnodi",
+  "email": {
+    "label": "Cyfeiriad e-bost",
+    "empty": "Rhowch eich cyfeiriad e-bost"
+  },
+  "password": {
+    "label": "Cyfrinair",
+    "empty": "Rhowch eich cyfrinair"
+  },
+  "registerLink": "Cofrestrwch nawr",
+  "p1": "os nad ydych wedi defnyddio'r gwasanaeth hwn o'r blaen.",
+  "h2": "Problemau mewngofnodi",
+  "forgotPasswordLink": "Rwyf wedi anghofio fy nghyfrinair",
+  "account-recovery": "Ni allaf gael mynediad i'r e-bost rwy'n ei ddefnyddio i fewngofnodi",
+  "invalid": {
+    "incorrect": "Mae'r cyfeiriad e-bost neu'r cyfrinair a roddoch yn anghywir",
+    "register": "Cofrestrwch nawr os nad ydych wedi defnyddio'r gwasanaeth hwn o'r blaen",
+    "warning": "Byddwch yn cael eich cloi allan os byddwch yn rhoi manylion mewngofnodi anghywir unwaith yn rhagor"
+  }
+}

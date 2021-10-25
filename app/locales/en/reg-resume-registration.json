@@ -1,0 +1,14 @@
+{
+  "title": "Complete registration",
+  "heading": "You must complete your registration before you sign in",
+  "p-1": "You need a mobile phone to complete your registration. We will send a security code to your mobile phone.",
+  "h2": "When you sign in for the first time",
+  "p-2": "You will need information from 2 sources so we can check we are dealing with the right person. These are:",
+  "list": [
+    "a UK passport",
+    "payslips or P60",
+    "information about tax credits, if you claim them",
+    "details of your credit record"
+  ],
+  "button": "Complete registration"
+}

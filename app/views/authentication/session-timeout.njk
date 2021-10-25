@@ -1,0 +1,18 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('auth-session-timeout:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% set submitButtonText = 'auth-session-timeout:button' %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">
+        {{ t('auth-session-timeout:heading') }}
+    </h1>
+
+    <p class="govuk-body">{{ t('auth-session-timeout:p-1') }}</p>
+    <p class="govuk-body">{{ t('auth-session-timeout:p-2') }}</p>
+{% endblock %}

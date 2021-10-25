@@ -1,0 +1,10 @@
+{
+  "title": "Send me a new email",
+  "heading": "Send me a new email",
+  "p-1": "We will send you an email with a new security code.",
+  "p-2": "After several attempts, I have not received an email",
+  "p-3": "Check your junk folders. If you cannot find your security code the email address you entered may be wrong.",
+  "href-1": "Enter your email address",
+  "p-4": " again and check the right email address is entered. We will send a new code.",
+  "p-5": "If you still do not receive a code, try again later."
+}

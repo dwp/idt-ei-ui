@@ -1,0 +1,8 @@
+{
+  "title": "You are still locked out of the process",
+  "h1": "You are still locked out of the process",
+  "p-1" : "This is because wrong security codes were entered 3 times.",
+  "p-2": "You will be able to ",
+  "account-recovery-link": "try again",
+  "p-3": " 15 minutes after you last tried to recover your account."
+}

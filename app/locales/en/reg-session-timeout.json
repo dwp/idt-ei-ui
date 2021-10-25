@@ -1,0 +1,7 @@
+{
+  "title": "Registration stopped",
+  "heading": "Registration stopped",
+  "p-1": "Your registration was stopped because no information was entered for 20 minutes. You can start your registration again but you will have to re-enter your details.",
+  "p-2": "This keeps your information secure.",
+  "button": "Start again"
+}

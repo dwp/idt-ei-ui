@@ -1,0 +1,25 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('account-recovery-start-update-mobile:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% set submitButtonText = 'account-recovery-start-update-mobile:button' %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">
+        {{ t('account-recovery-start-update-mobile:heading') }}
+    </h1>
+
+    <p class="govuk-body">{{ t('account-recovery-start-update-mobile:p-1') }}</p>
+    <p class="govuk-body">{{ t('account-recovery-start-update-mobile:p-2') }}</p>
+    <ul class="govuk-list govuk-list--bullet">
+        <li>{{ t('account-recovery-start-update-mobile:li-1') }}</li>
+        <li>{{ t('account-recovery-start-update-mobile:li-2') }}</li>
+        <li>{{ t('account-recovery-start-update-mobile:li-3') }}</li>
+        <li>{{ t('account-recovery-start-update-mobile:li-4') }}</li>
+    </ul>
+    <p class="govuk-body">{{ t('account-recovery-start-update-mobile:p-3') }}</p>
+{% endblock %}

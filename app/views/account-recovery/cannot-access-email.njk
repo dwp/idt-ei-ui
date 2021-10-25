@@ -1,0 +1,20 @@
+{% extends "../form.njk" %}
+
+{% block pageTitle %}
+    {{ t('account-recovery-cannot-access-email:title') }}
+{% endblock %}
+
+{% set timeoutWarning = false %}
+
+{% set submitButtonText = 'account-recovery-cannot-access-email:button' %}
+
+{% block formElements %}
+    <h1 class="govuk-heading-l" id="page-heading">
+        {{ t('account-recovery-cannot-access-email:heading') }}
+    </h1>
+
+    <p class="govuk-body">{{ t('account-recovery-cannot-access-email:p-1') }}</p>
+
+    <input type="hidden" name="callbacks" value="resend">
+    <input type="hidden" name="callbacks" value="">
+{% endblock %}

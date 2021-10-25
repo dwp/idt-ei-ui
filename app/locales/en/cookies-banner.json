@@ -1,0 +1,26 @@
+{
+  "heading": "Cookies on DWP login and identification service",
+  "main-banner": {
+    "p-1": "We use some essential cookies to make this service work.",
+    "p-2": "We’d also like to use analytics cookies so we can understand how you use the service and make improvements.",
+    "button-accept": "Accept analytics cookies",
+    "button-reject": "Reject analytics cookies",
+    "href-1": "View cookies"
+  },
+  "acceptance": {
+    "p-1": {
+      "text-1": "You’ve accepted additional cookies. You can",
+      "href-1": "change your cookie settings",
+      "text-2": "at any time."
+    }
+  },
+  "rejection": {
+    "p-1": {
+      "text-1": "You’ve rejected additional cookies. You can",
+      "href-1": "change your cookie settings",
+      "text-2": "at any time."
+    }
+  }, 
+  "button-hide": "Hide this message"
+}
+  
