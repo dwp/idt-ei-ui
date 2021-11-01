@@ -26,6 +26,7 @@ const setSession = (selfServiceAppObj, sessionValues) => {
   return app;
 };
 
+process.env.SECURE_COOKIE = 'true';
 const selfServiceApp = require('../../../app/app');
 
 describe('cookies', () => {

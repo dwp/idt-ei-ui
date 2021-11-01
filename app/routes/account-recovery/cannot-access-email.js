@@ -6,6 +6,7 @@
  * @returns {undefined}
  */
 const getCannotAccessEmail = async (req, res) => {
+  req.session.journey = 'account-recovery';
   res.render('account-recovery/cannot-access-email.njk');
 };
 

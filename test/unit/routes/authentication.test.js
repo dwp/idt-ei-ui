@@ -319,6 +319,18 @@ describe('Authentication', () => {
     expect(res.get('Location')).toContain('/full-lockout');
   });
 
+  // This may happen e.g. if user selects back link from temp lockout page
+  it('Verify Mobile page - should display still temp locked out page if FR returns STILL_TEMP_LOCKOUT message', async () => {
+    axios.post.mockRejectedValue(buildError401Callback('STILL_TEMP_LOCKOUT'));
+    const testApp = setSession(app);
+    const res = await request(testApp)
+      .post('/authenticate/verify-mobile')
+      .type('form')
+      .send({ 'callbacks[0]': '123456', callbacks: '' });
+    expect(res.statusCode).toEqual(302);
+    expect(res.get('Location')).toContain('/still-temp-lockout');
+  });
+
   it('should display generic error page if unrecognised failure url received on Verify Mobile page', async () => {
     axios.post.mockRejectedValue(buildError401Callback('NOT_RECOGNISED'));
     const res = await request(app)

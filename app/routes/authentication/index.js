@@ -86,6 +86,8 @@ const postAuthVerifyMobile = async (req, res) => {
             res.redirect('/authenticate/temporary-lockout-sms');
           } else if (failureUrl === 'FULL_LOCKOUT') {
             res.redirect('/authenticate/full-lockout');
+          } else if (failureUrl === 'STILL_TEMP_LOCKOUT') {
+            res.redirect('/authenticate/still-temp-lockout');
           } else {
             throw err;
           }

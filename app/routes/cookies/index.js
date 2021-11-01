@@ -3,7 +3,7 @@ const logger = require('../../lib/logger')();
 const cookieOptions = {
   maxAge: 365 * 24 * 60 * 60 * 1000, // 1 year
   httpOnly: true,
-  secure: true,
+  secure: process.env.SECURE_COOKIE === 'true',
 };
 
 const obtainRedirectToPreviousPage = (session) => {
